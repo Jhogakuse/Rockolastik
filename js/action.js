@@ -103,7 +103,11 @@
 		});
 		*/
 		$.getJSON('json/url.json', function(data) {
-			console.log(data);
+			for (var i = 0; i < data.Playlist.length; i++) {
+				console.log(data.Playlist[i].Item.Name);
+				console.log(data.Playlist[i].Item.Url);
+				console.log(data.Playlist[i].Item.Audio);
+			}
 		});
 		/*
 
